@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #0000bb;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="CENTER" blendMode="COLOR_BURN" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="501.0" style="-fx-background-color: #0000bb;" text="WELCOME TO LOYAL COOPERATIVE SOCIETY">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <ImageView blendMode="OVERLAY" fitHeight="149.0" fitWidth="175.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/fg.png" />
+         </image>
+      </ImageView>
+   </children>
+</StackPane>

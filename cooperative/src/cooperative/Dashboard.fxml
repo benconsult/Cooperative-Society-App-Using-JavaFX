@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: #0000fa;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="cooperative.DashboardController">
+   <children>
+      <Label blendMode="BLUE" layoutX="176.0" layoutY="14.0" prefHeight="48.0" prefWidth="324.0" text="DASHBOARD PANEL">
+         <font>
+            <Font name="Arial" size="28.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="134.0" layoutY="85.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="357.0" prefWidth="408.0" style="-fx-background-color: #0000bb;">
+         <children>
+            <Pane layoutX="46.0" layoutY="41.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="115.0" prefWidth="134.0" style="-fx-background-color: #00008a;">
+               <children>
+                  <ImageView blendMode="BLUE" fitHeight="57.0" fitWidth="77.0" layoutX="28.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pictures/member.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="member" blendMode="COLOR_BURN" layoutX="32.0" layoutY="89.0" onAction="#handleMembers" text="MEMBERS" />
+               </children>
+            </Pane>
+            <Pane layoutX="224.0" layoutY="41.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="115.0" prefWidth="134.0" style="-fx-background-color: #00008a;">
+               <children>
+                  <ImageView blendMode="BLUE" fitHeight="57.0" fitWidth="77.0" layoutX="29.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pictures/deposit.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="deposit" blendMode="COLOR_BURN" layoutX="33.0" layoutY="89.0" onAction="#handleDeposit" text="DEPOSITS" />
+               </children>
+            </Pane>
+            <Pane layoutX="46.0" layoutY="204.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="107.0" prefWidth="134.0" style="-fx-background-color: #00008a;">
+               <children>
+                  <ImageView blendMode="BLUE" fitHeight="57.0" fitWidth="77.0" layoutX="29.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pictures/images%20(14).jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="debtors" blendMode="COLOR_BURN" layoutX="34.0" layoutY="81.0" onAction="#handleDebtors" text="DEBTORS" />
+               </children>
+            </Pane>
+            <Pane layoutX="224.0" layoutY="200.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="115.0" prefWidth="134.0" style="-fx-background-color: #00008a;">
+               <children>
+                  <ImageView blendMode="BLUE" fitHeight="57.0" fitWidth="77.0" layoutX="28.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pictures/loan.jpg" />
+                     </image>
+                  </ImageView>
+                  <JFXButton fx:id="loan" blendMode="COLOR_BURN" layoutX="41.0" layoutY="89.0" onAction="#handleLoan" text="LOAN" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="home" blendMode="BLUE" layoutX="14.0" layoutY="85.0" onAction="#handleHome" text="HOME" />
+      <JFXButton fx:id="about" blendMode="BLUE" layoutX="14.0" layoutY="115.0" onAction="#handleAbout" text="ABOUT" />
+      <JFXButton fx:id="exit" blendMode="BLUE" layoutX="20.0" layoutY="148.0" onAction="#handleExit" text="EXIT" />
+      <Label blendMode="BLUE" layoutX="262.0" layoutY="469.0" text="copyright@2018" />
+      <ImageView blendMode="BLUE" fitHeight="67.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/logg.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

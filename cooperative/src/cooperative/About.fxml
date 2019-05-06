@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.111" fx:controller="cooperative.AboutController">
+   <children>
+      <Label layoutX="27.0" layoutY="134.0" prefHeight="36.0" prefWidth="547.0" text="*For any member who fails to pay up within eight(8) months of loan collection , an additional amount " />
+      <Label layoutX="26.0" layoutY="69.0" prefHeight="36.0" prefWidth="494.0" text="*Members must have saved up to #60,000 before he/she can be entitled to a loan" />
+      <Label layoutX="30.0" layoutY="158.0" prefHeight="24.0" prefWidth="277.0" text="of  5% should be added to his/her pending debt" />
+      <Label layoutX="26.0" layoutY="45.0" prefHeight="24.0" prefWidth="373.0" text="*New members must have an Identification number(MID)" />
+      <Label layoutX="30.0" layoutY="105.0" prefHeight="17.0" prefWidth="568.0" text="*For any member who collects less than his/her deposited amount, only the deposit record of such " />
+      <Label blendMode="DARKEN" layoutX="30.0" layoutY="21.0" prefHeight="21.0" prefWidth="432.0" text="RULES AND REGULATIONS OF LOYAL COOPERATIVE SOCIETY">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="30.0" layoutY="207.0" text="be updated to zero and his/her name should be added to the debtors list. the " />
+      <Label layoutX="27.0" layoutY="183.0" prefHeight="17.0" prefWidth="547.0" text="*For any member who collects loan abobe his/her savings, the deposit record of such member should " />
+      <Label layoutX="30.0" layoutY="124.0" prefHeight="21.0" prefWidth="186.0" text="member should be updated" />
+      <JFXButton fx:id="back" layoutX="520.0" layoutY="353.0" onAction="#handleBack" text="BACK">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

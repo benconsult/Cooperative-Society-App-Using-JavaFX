@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="750.0" style="-fx-background-color: #0000bb;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cooperative.LoanController">
+   <children>
+      <JFXTextField fx:id="collection" focusColor="#f6f7f8" layoutX="313.0" layoutY="450.0" prefHeight="25.0" prefWidth="165.0" promptText="COLLECTION DATE(DD/MM/YY)" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="memId" focusColor="#f9fafc" layoutX="22.0" layoutY="450.0" promptText="MEMBERID" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="amount" focusColor="#f6f7f8" layoutX="171.0" layoutY="450.0" promptText="AMOUNT(#)" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="txtSearch" focusColor="#f5f6f8" layoutX="22.0" layoutY="67.0" promptText="SEARCH BY MEMBERID" style="-fx-background-color: #ffffff;" />
+      <JFXTextField fx:id="expiry" focusColor="#f6f7f8" layoutX="490.0" layoutY="450.0" promptText="EXPIRY DATE(DD/MM/YY)" style="-fx-background-color: #ffffff;" />
+      <TextField fx:id="console" layoutX="250.0" layoutY="540.0" prefHeight="25.0" prefWidth="251.0" promptText="DISPLAY MESSAGE" />
+      <JFXButton fx:id="delete" blendMode="COLOR_BURN" layoutX="576.0" layoutY="486.0" onAction="#handleDelete" text="DELETE" />
+      <JFXButton fx:id="clear" blendMode="COLOR_BURN" layoutX="22.0" layoutY="486.0" onAction="#handleClear" text="CLEAR" />
+      <JFXButton fx:id="exit" blendMode="COLOR_BURN" layoutX="697.0" layoutY="8.0" onAction="#handleExit" text="EXIT" />
+      <JFXButton fx:id="refresh" blendMode="COLOR_BURN" layoutX="426.0" layoutY="486.0" onAction="#handleRefresh" text="REFRESH" />
+      <JFXButton fx:id="save" blendMode="COLOR_BURN" layoutX="149.0" layoutY="486.0" onAction="#handleSave" text="SAVE" />
+      <JFXButton fx:id="update" blendMode="COLOR_BURN" layoutX="296.0" layoutY="486.0" onAction="#handleUpdate" text="UPDATE" />
+      <TableView fx:id="table" layoutX="22.0" layoutY="91.0" prefHeight="349.0" prefWidth="607.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="75.0" text="MEMBERID" />
+          <TableColumn fx:id="colAmm" prefWidth="165.0" text="AMOUNT(#)" />
+            <TableColumn fx:id="colCollect" prefWidth="220.0" text="COLLECTION DATE" />
+            <TableColumn fx:id="colExp" prefWidth="126.0" text="EXPIRY DATE" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="searchBtn" blendMode="HARD_LIGHT" layoutX="149.0" layoutY="67.0" onAction="#handleSearch" text="SEARCH" />
+      <JFXButton fx:id="memberBtn" blendMode="COLOR_BURN" layoutX="636.0" layoutY="165.0" onAction="#handleViewMember" text="VIEW MEMBERS" />
+      <JFXButton fx:id="depoBtn" blendMode="COLOR_BURN" layoutX="630.0" layoutY="415.0" onAction="#handleViewDepo" text="VIEW DEPOSITS" />
+      <JFXButton fx:id="debtBtn" blendMode="COLOR_BURN" layoutX="638.0" layoutY="283.0" onAction="#handleViewDebt" text="VIEW DEBTORS" />
+      <Label alignment="CENTER" blendMode="COLOR_BURN" layoutX="162.0" layoutY="9.0" prefHeight="48.0" prefWidth="427.0" text="LOAN ACQUISITION RECORD">
+         <font>
+            <Font name="Arial" size="28.0" />
+         </font>
+      </Label>
+      <Label blendMode="COLOR_BURN" layoutX="636.0" layoutY="75.0" prefHeight="48.0" prefWidth="102.0" text="QUICK LINKS">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <ImageView blendMode="COLOR_BURN" fitHeight="58.0" fitWidth="72.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/loan.jpg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="BLUE" fitHeight="48.0" fitWidth="55.0" layoutX="660.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/member.jpg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="BLUE" fitHeight="48.0" fitWidth="55.0" layoutX="660.0" layoutY="248.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/images%20(14).jpg" />
+         </image>
+      </ImageView>
+      <ImageView blendMode="BLUE" fitHeight="48.0" fitWidth="55.0" layoutX="660.0" layoutY="379.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pictures/deposit.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
